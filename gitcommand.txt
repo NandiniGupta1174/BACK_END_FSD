@@ -1,0 +1,14 @@
+git command
+local repo to cloud repo
+git status
+git init
+git add file name/.
+git commit -m "msg"
+git remote add origin   git hub repo url
+git branch -M main
+git push -u origin main
+cloud to local repo
+git clone url
+other git command
+git log
+git checkkout
