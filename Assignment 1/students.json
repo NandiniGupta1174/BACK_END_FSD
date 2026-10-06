@@ -4,5 +4,17 @@
     "roll": "2503201000755",
     "course": "B.Tech",
     "email": "123@gmail.com"
+  },
+  {
+    "name": "nandini",
+    "roll": "755",
+    "course": "btech",
+    "email": "123nandini@gmail.com"
+  },
+  {
+    "name": "ABC",
+    "roll": "4556",
+    "course": "BCA",
+    "email": "ABC@gmail.com"
   }
 ]
