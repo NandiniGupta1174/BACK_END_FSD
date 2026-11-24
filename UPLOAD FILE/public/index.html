@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Upload File Portal App</h1>
+    <input type="file" id="fileInput" name="file" placeholder="upload file here..."/>
+    <button onclick="uploadFile()">Upload</button>
+    <script>
+        function uploadFile(){
+            const input=document.getElementById('fileInput');
+            const data=new FormData();//form data transfer and upload file
+            data.append('file',input.files[0]);
+            fetch('/uploads',{
+                method:'POST',
+                body:data
+            }).then(res=>res.text()).then(result=>{
+                alert(result);
+            })
+        }
+    </script>
+</body>
+</html>
